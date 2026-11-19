@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prof. Marcos Cruz - METODOLOGIA DO ENSINO</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #69748a;
+      --paper: #f7f8fc;
+      --card: #ffffff;
+      --line: #e4e7ef;
+      --brand: #3559e0;
+      --brand-soft: #edf1ff;
+      --correct: #16865a;
+      --correct-soft: #eaf7f1;
+      --wrong: #b53d50;
+      --wrong-soft: #fdeef1;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 10%, rgba(53, 89, 224, .09), transparent 28rem),
+        var(--paper);
+    }
+
+    .shell {
+      width: min(780px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .status-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timer {
+      display: grid;
+      min-width: 82px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: rgba(255,255,255,.8);
+      text-align: center;
+    }
+
+    .timer span {
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .timer strong {
+      margin-top: 2px;
+      font-variant-numeric: tabular-nums;
+      font-size: 15px;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--brand);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .score {
+      flex: none;
+      padding: 9px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.8);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .progress-track {
+      height: 6px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: var(--line);
+    }
+
+    .progress-bar {
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--brand);
+      transition: width .25s ease;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: var(--card);
+      box-shadow: 0 18px 50px rgba(38, 48, 79, .08);
+    }
+
+    .card-header {
+      padding: 22px 28px 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: var(--brand-soft);
+      color: var(--brand);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .question {
+      margin: 0;
+      font-size: clamp(18px, 3vw, 23px);
+      line-height: 1.45;
+      letter-spacing: -.015em;
+    }
+
+    .options {
+      display: grid;
+      gap: 10px;
+      padding: 22px 28px 28px;
+    }
+
+    .option {
+      width: 100%;
+      min-height: 58px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-size: 15px;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color .15s ease, transform .15s ease, background .15s ease;
+    }
+
+    .option:hover:not(:disabled) {
+      border-color: #aab8ef;
+      background: #fafbff;
+      transform: translateY(-1px);
+    }
+
+    .option:focus-visible,
+    .nav-button:focus-visible {
+      outline: 3px solid rgba(53, 89, 224, .25);
+      outline-offset: 2px;
+    }
+
+    .option.correct {
+      border-color: rgba(22, 134, 90, .45);
+      background: var(--correct-soft);
+      color: #0f6645;
+    }
+
+    .option.wrong {
+      border-color: rgba(181, 61, 80, .42);
+      background: var(--wrong-soft);
+      color: var(--wrong);
+    }
+
+    .option:disabled { cursor: default; }
+
+    .feedback {
+      display: none;
+      margin: 0 28px 24px;
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: #fafbfe;
+    }
+
+    .feedback.visible { display: block; }
+
+    .feedback h2 {
+      margin: 0 0 7px;
+      font-size: 15px;
+    }
+
+    .feedback p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .feedback p + p { margin-top: 8px; }
+
+    .feedback.correct { border-color: rgba(22,134,90,.25); background: var(--correct-soft); }
+    .feedback.wrong { border-color: rgba(181,61,80,.25); background: var(--wrong-soft); }
+
+    .feedback.correct h2 { color: var(--correct); }
+    .feedback.wrong h2 { color: var(--wrong); }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .nav-button {
+      min-height: 46px;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 10px;
+      font: inherit;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .nav-button.secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .nav-button.primary {
+      background: var(--ink);
+      color: #fff;
+    }
+
+    .nav-button:disabled {
+      opacity: .42;
+      cursor: not-allowed;
+    }
+
+    .result {
+      display: none;
+      text-align: center;
+      padding: 44px 28px;
+    }
+
+    .result.visible { display: block; }
+
+    .result-mark {
+      display: grid;
+      place-items: center;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      background: var(--brand-soft);
+      color: var(--brand);
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .result h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+
+    .result p {
+      margin: 0 0 22px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 560px) {
+      .shell { width: min(100% - 20px, 780px); padding: 24px 0; }
+      .topbar { align-items: center; }
+      .status-group { flex-wrap: wrap; justify-content: flex-end; }
+      .topbar { align-items: flex-start; }
+      .card-header { padding: 18px 18px 16px; }
+      .options { padding: 18px; }
+      .feedback { margin-inline: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Prof. Marcos Cruz</p>
+        <h1>METODOLOGIA DO ENSINO</h1>
+      </div>
+      <div class="status-group">
+        <div class="score" id="score">0 acertos</div>
+        <div class="timer">
+          <span>Total</span>
+          <strong id="totalTimer">00:00</strong>
+        </div>
+        <div class="timer">
+          <span>Questão</span>
+          <strong id="questionTimer">00:00</strong>
+        </div>
+      </div>
+    </header>
+
+    <div class="progress-track" aria-label="Progresso">
+      <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <section class="card" id="quizCard">
+      <div id="questionView">
+        <div class="card-header">
+          <div class="meta">
+            <span class="pill" id="position"></span>
+          </div>
+          <h2 class="question" id="question"></h2>
+        </div>
+        <div class="options" id="options" role="group" aria-label="Alternativas"></div>
+        <div class="feedback" id="feedback" aria-live="polite">
+          <h2 id="feedbackTitle"></h2>
+          <p id="explanation"></p>
+          <p id="reminder"></p>
+        </div>
+      </div>
+
+      <div class="result" id="result">
+        <div class="result-mark" id="resultMark">0%</div>
+        <h2>Quiz concluído</h2>
+        <p id="resultText"></p>
+        <button class="nav-button primary" id="restart">Refazer quiz</button>
+      </div>
+    </section>
+
+    <div class="footer" id="footer">
+      <button class="nav-button secondary" id="previous">Anterior</button>
+      <button class="nav-button primary" id="next" disabled>Próxima</button>
+    </div>
+  </main>
+
+  <script src="questions.js"></script>
+  <script>
+    const questions = window.QUIZ_QUESTIONS;
+    let order = [];
+    let current = 0;
+    let score = 0;
+    let adaptiveTopic = null;
+    let answers = new Array(questions.length).fill(null);
+    let questionElapsed = new Array(questions.length).fill(0);
+    const visitedQuestionIds = new Set();
+    let totalStartedAt = Date.now();
+    let totalElapsed = 0;
+    let questionStartedAt = null;
+    let totalInterval = null;
+    let questionInterval = null;
+
+    const elements = {
+      position: document.getElementById('position'),
+      question: document.getElementById('question'),
+      options: document.getElementById('options'),
+      feedback: document.getElementById('feedback'),
+      feedbackTitle: document.getElementById('feedbackTitle'),
+      explanation: document.getElementById('explanation'),
+      reminder: document.getElementById('reminder'),
+      previous: document.getElementById('previous'),
+      next: document.getElementById('next'),
+      progress: document.getElementById('progress'),
+      score: document.getElementById('score'),
+      questionView: document.getElementById('questionView'),
+      result: document.getElementById('result'),
+      resultMark: document.getElementById('resultMark'),
+      resultText: document.getElementById('resultText'),
+      restart: document.getElementById('restart'),
+      footer: document.getElementById('footer'),
+      totalTimer: document.getElementById('totalTimer'),
+      questionTimer: document.getElementById('questionTimer')
+    };
+
+    function formatTime(milliseconds, alwaysShowHours) {
+      const totalSeconds = Math.floor(Math.max(0, milliseconds) / 1000);
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      if (alwaysShowHours || hours > 0) {
+        return String(hours).padStart(2, '0') + ':' +
+          String(minutes).padStart(2, '0') + ':' +
+          String(seconds).padStart(2, '0');
+      }
+
+      return String(minutes).padStart(2, '0') + ':' +
+        String(seconds).padStart(2, '0');
+    }
+
+    function updateTotalTimer() {
+      totalElapsed = Date.now() - totalStartedAt;
+      elements.totalTimer.textContent = formatTime(totalElapsed, true);
+    }
+
+    function updateQuestionTimer() {
+      if (questionStartedAt !== null) {
+        const elapsed = questionElapsed[current] + (Date.now() - questionStartedAt);
+        elements.questionTimer.textContent = formatTime(elapsed, false);
+      }
+    }
+
+    function pauseQuestionTimer() {
+      if (questionStartedAt !== null) {
+        questionElapsed[current] += Date.now() - questionStartedAt;
+        questionStartedAt = null;
+      }
+      if (questionInterval !== null) {
+        clearInterval(questionInterval);
+        questionInterval = null;
+      }
+    }
+
+    function startQuestionTimer() {
+      if (answers[current] !== null) {
+        elements.questionTimer.textContent = formatTime(questionElapsed[current], false);
+        return;
+      }
+
+      questionStartedAt = Date.now();
+      updateQuestionTimer();
+      questionInterval = setInterval(updateQuestionTimer, 250);
+    }
+
+    function shuffle(items) {
+      const shuffled = items.slice();
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    }
+
+    function resetRandomOrder() {
+      order = shuffle(questions);
+      visitedQuestionIds.clear();
+    }
+
+    function insertAdaptiveQuestion() {
+      if (!adaptiveTopic) return;
+      const candidates = questions.filter(item =>
+        item.theme === adaptiveTopic &&
+        !visitedQuestionIds.has(item.id)
+      );
+      if (candidates.length === 0) {
+        adaptiveTopic = null;
+        return;
+      }
+      const nextItem = candidates[Math.floor(Math.random() * candidates.length)];
+      const existingIndex = order.findIndex((item, index) =>
+        index > current && item.id === nextItem.id
+      );
+      if (existingIndex >= 0) order.splice(existingIndex, 1);
+      order.splice(current + 1, 0, nextItem);
+      adaptiveTopic = null;
+    }
+
+    function render() {
+      const item = order[current];
+      visitedQuestionIds.add(item.id);
+      elements.position.textContent = 'Questão aleatória';
+      elements.question.textContent = item.question;
+      elements.options.innerHTML = '';
+      elements.feedback.className = 'feedback';
+
+      item.options.forEach((option, index) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'option';
+        button.textContent = option;
+        button.addEventListener('click', () => answer(index));
+        elements.options.appendChild(button);
+      });
+
+      elements.previous.disabled = current === 0;
+      elements.next.disabled = answers[current] === null;
+      elements.next.textContent = current === order.length - 1 ? 'Ver resultado' : 'Próxima';
+      elements.progress.style.width = ((current + 1) / order.length * 100) + '%';
+
+      if (answers[current] !== null) {
+        showAnswer(answers[current]);
+      }
+
+      startQuestionTimer();
+      updateScore();
+    }
+
+    function answer(index) {
+      if (answers[current] !== null) return;
+      answers[current] = index;
+      pauseQuestionTimer();
+      const item = order[current];
+      const correct = index === item.correctIndex;
+      if (correct) {
+        score++;
+        adaptiveTopic = null;
+      } else {
+        adaptiveTopic = item.theme;
+      }
+      showAnswer(index);
+      updateScore();
+      elements.next.disabled = false;
+    }
+
+    function showAnswer(index) {
+      const item = order[current];
+      const buttons = elements.options.querySelectorAll('.option');
+
+      buttons.forEach((button, buttonIndex) => {
+        button.disabled = true;
+        if (buttonIndex === item.correctIndex) button.classList.add('correct');
+        if (buttonIndex === index && index !== item.correctIndex) button.classList.add('wrong');
+      });
+
+      const correct = index === item.correctIndex;
+      elements.feedback.className = 'feedback visible ' + (correct ? 'correct' : 'wrong');
+      elements.feedbackTitle.textContent = correct ? 'Resposta correta' : 'Resposta incorreta';
+      elements.explanation.textContent = item.explanation;
+      elements.reminder.innerHTML = '<strong>Lembrete:</strong> ' + item.reminder;
+    }
+
+    function updateScore() {
+      const answered = answers.filter(answer => answer !== null).length;
+      elements.score.textContent = score + ' acerto' + (score === 1 ? '' : 's') + ' · ' + answered + '/' + order.length;
+    }
+
+    function showResult() {
+      const percentage = Math.round(score / order.length * 100);
+      pauseQuestionTimer();
+      clearInterval(totalInterval);
+      totalInterval = null;
+      updateTotalTimer();
+      elements.questionView.style.display = 'none';
+      elements.footer.style.display = 'none';
+      elements.result.classList.add('visible');
+      elements.resultMark.textContent = percentage + '%';
+      elements.resultText.textContent = 'Você acertou ' + score + ' de ' + order.length +
+        ' questões. Tempo total: ' + formatTime(totalElapsed, true) + '.';
+      elements.progress.style.width = '100%';
+    }
+
+    elements.previous.addEventListener('click', () => {
+      if (current > 0) {
+        pauseQuestionTimer();
+        current--;
+        render();
+      }
+    });
+
+    elements.next.addEventListener('click', () => {
+      if (answers[current] === null) return;
+      if (current < order.length - 1) {
+        insertAdaptiveQuestion();
+        pauseQuestionTimer();
+        current++;
+        render();
+      } else {
+        showResult();
+      }
+    });
+
+    elements.restart.addEventListener('click', () => {
+      current = 0;
+      score = 0;
+      adaptiveTopic = null;
+      answers.fill(null);
+      questionElapsed.fill(0);
+      resetRandomOrder();
+      totalStartedAt = Date.now();
+      totalElapsed = 0;
+      pauseQuestionTimer();
+      clearInterval(totalInterval);
+      totalInterval = setInterval(updateTotalTimer, 250);
+      elements.totalTimer.textContent = '00:00:00';
+      elements.questionView.style.display = '';
+      elements.footer.style.display = '';
+      elements.result.classList.remove('visible');
+      render();
+    });
+
+    resetRandomOrder();
+    totalInterval = setInterval(updateTotalTimer, 250);
+    render();
+  </script>
+</body>
+</html>

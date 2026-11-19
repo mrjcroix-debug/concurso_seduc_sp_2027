@@ -1,0 +1,354 @@
+[
+  {
+    "id": 1,
+    "chapter": 2,
+    "technique": "Técnica 2 – Planeje para o Erro",
+    "page": "pp. 49–53",
+    "question": "Durante a elaboração do plano de aula sobre período composto por coordenação, o professor prevê que os estudantes provavelmente confundirão orações subordinadas adverbiais causais com orações coordenadas explicativas. Com base nisso, ele prepara previamente um exercício específico de diferenciação. Essa postura reflete qual técnica?",
+    "options": [
+      "A) Sem Escapatória",
+      "B) Planeje para o Erro",
+      "C) Cultura do Erro",
+      "D) Certo é Certo"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Técnica 2 (Planeje para o Erro) orienta o docente a antecipar equívocos conceituais comuns durante o planejamento, preparando estratégias específicas para abordá-los proativamente.",
+    "reminder": "Planejar para o erro significa usar a experiência pedagógica para antever onde a turma vai oscilar e já deixar pronta a intervenção."
+  },
+  {
+    "id": 2,
+    "chapter": 2,
+    "technique": "Técnica 2 – Planeje para o Erro",
+    "page": "pp. 49–53",
+    "question": "Um docente de Língua Inglesa, ao planejar a aula sobre o uso de 'Simple Past' e 'Present Perfect', escreve em seu plano: 'Erro provável: uso de marcador de tempo determinado com Present Perfect. Ação: apresentar par contraposto na etapa de prática guiada'. Essa conduta demonstra a aplicação de:",
+    "options": [
+      "A) Planeje em Dobro",
+      "B) Planeje para o Erro",
+      "C) Puxe Mais",
+      "D) Substitua o Autorrelato"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ao mapear a dúvida provável antes da aula e elaborar o contraponto prático, o professor utiliza a Técnica 2 (Planeje para o Erro).",
+    "reminder": "Planejar para o erro antecipa a dúvida provável do estudante no papel antes que ela ocorra em sala."
+  },
+  {
+    "id": 3,
+    "chapter": 2,
+    "technique": "Técnica 4 – Planeje em Dobro",
+    "page": "pp. 58–62",
+    "question": "Ao elaborar seu plano de aula diário, a professora estrutura duas colunas paralelas: uma contendo a fala e a instrução docente, e outra detalhando exatamente o que os alunos deverão estar fazendo (escrevendo, discutindo em duplas, anotando no caderno). Esse procedimento caracteriza a:",
+    "options": [
+      "A) Técnica 4 – Planeje em Dobro",
+      "B) Técnica 16 – Certo é Certo",
+      "C) Técnica 26 – Arremate",
+      "D) Técnica 38 – Todo Mundo Escreve"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 4 (Planeje em Dobro) exige que o planejamento contemple não apenas a atuação do professor, mas planeje minuciosamente o trabalho e o engajamento dos alunos a cada minuto.",
+    "reminder": "Planejar em dobro é focar 50% no que o professor diz/faz e 50% no que os estudantes fazem em resposta."
+  },
+  {
+    "id": 4,
+    "chapter": 2,
+    "technique": "Técnica 4 – Planeje em Dobro",
+    "page": "pp. 58–62",
+    "question": "Um professor percebeu que suas explicações teóricas eram claras, mas os alunos ficavam ociosos durante a transição entre as atividades. Ele passou a planejar explicitamente as ações ativas dos alunos em cada etapa da aula. Segundo Lemov, ele passou a utilizar:",
+    "options": [
+      "A) Arremate",
+      "B) Planeje em Dobro",
+      "C) Voz de Comando",
+      "D) Virem e Conversem"
+    ],
+    "correctIndex": 1,
+    "explanation": "Planejar em Dobro significa mapear ativamente o comportamento e o esforço cognitivo do estudante em paralelo às ações do professor.",
+    "reminder": "A cada etapa de ensino planejada, pergunte-se: 'O que meus alunos estarão fazendo exatamente agora?'."
+  },
+  {
+    "id": 5,
+    "chapter": 3,
+    "technique": "Técnica 6 – Substitua o Autorrelato",
+    "page": "pp. 76–82",
+    "question": "Em vez de perguntar 'Alguém ficou com alguma dúvida sobre regência verbal?' e avançar após o silêncio da turma, o professor aplica um teste rápido com 3 frases para que todos respondam no caderno. Segundo Doug Lemov, essa estratégia visa:",
+    "options": [
+      "A) Aplicar a Técnica 15 – Sem Escapatória",
+      "B) Aplicar a Técnica 6 – Substitua o Autorrelato",
+      "C) Aplicar a Técnica 58 – Voz de Comando",
+      "D) Aplicar a Técnica 59 – Discurso Positivo"
+    ],
+    "correctIndex": 1,
+    "explanation": "A Técnica 6 (Substitua o Autorrelato) recomenda trocar perguntas afirmativas passivas ('Entenderam?') por checagens objetivas de desempenho real dos estudantes.",
+    "reminder": "Alunos costumam achar que entenderam quando na verdade não entenderam. Avalie a compreensão com dados objetivos, não autorrelatos."
+  },
+  {
+    "id": 6,
+    "chapter": 3,
+    "technique": "Técnica 6 – Substitua o Autorrelato",
+    "page": "pp. 76–82",
+    "question": "Uma docente de Inglês diz: 'Perguntar se a turma compreendeu a diferença entre *should* e *must* gera uma falsa sensação de segurança. Prefiro pedir que escrevam imediatamente uma frase usando cada verbo modal'. A professora está aplicando:",
+    "options": [
+      "A) Substitua o Autorrelato",
+      "B) De Surpresa",
+      "C) Discurso Positivo",
+      "D) Torne as Expectativas Visíveis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substituir perguntas genéricas por tarefas práticas e mensuráveis é o núcleo da Técnica 6 (Substitua o Autorrelato).",
+    "reminder": "Troque a confirmação verbal estática dos alunos por evidências concretas de aprendizagem."
+  },
+  {
+    "id": 7,
+    "chapter": 3,
+    "technique": "Técnica 12 – Cultura do Erro",
+    "page": "pp. 111–120",
+    "question": "Um estudante erra a concordância verbal de uma frase complexa no quadro. A professora sorri com entusiasmo e diz: 'Excelente engano! Essa frase foi feita justamente para cairmos nessa armadilha. Vamos ver onde a regra da próclise atua aqui'. A postura do docente acolhe o erro como parte natural do aprendizado, configurando:",
+    "options": [
+      "A) Técnica 12 – Cultura do Erro",
+      "B) Técnica 16 – Certo é Certo",
+      "C) Técnica 34 – De Surpresa",
+      "D) Técnica 52 – O Que Fazer"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 12 (Cultura do Erro) desenvolve um ambiente seguro onde os erros são desestigmatizados e tratados como valiosas oportunidades de análise e aprendizagem.",
+    "reminder": "Cultura do erro envolve desestigmatizar equívocos para que os alunos arrisquem e exponham lacunas reais sem medo."
+  },
+  {
+    "id": 8,
+    "chapter": 3,
+    "technique": "Técnica 12 – Cultura do Erro",
+    "page": "pp. 111–120",
+    "question": "Quando o professor corrige o erro de um aluno de forma rápida, neutra, sem julgamento nem condescendência, encorajando a turma a examinar a causa do equívoco, ele estabelece:",
+    "options": [
+      "A) Sem Escapatória",
+      "B) Cultura do Erro",
+      "C) Arremate",
+      "D) Tempo de Espera"
+    ],
+    "correctIndex": 1,
+    "explanation": "Normalizar o erro sem expor o estudante e usá-lo produtivamente instrui a Cultura do Erro.",
+    "reminder": "A resposta do professor ao erro determina se o aluno fechará a mente ou buscará a compreensão."
+  },
+  {
+    "id": 9,
+    "chapter": 4,
+    "technique": "Técnica 15 – Sem Escapatória",
+    "page": "pp. 139–173",
+    "question": "Ao ser perguntado sobre a função sintática do sujeito oracional, o aluno responde 'Não sei'. O professor não passa a vez para outro colega; ele pede a um colega que responda corretamente e, imediatamente em seguida, volta ao primeiro aluno para que este repita a resposta correta. Qual técnica foi utilizada?",
+    "options": [
+      "A) Técnica 15 – Sem Escapatória",
+      "B) Técnica 17 – Puxe Mais",
+      "C) Técnica 33 – Tempo de Espera",
+      "D) Técnica 60 – Elogio Preciso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 15 (Sem Escapatória) garante que a sequência de aprendizagem termine com o próprio estudante emitindo a resposta correta, impedindo que o 'não sei' seja um passe livre.",
+    "reminder": "Na Técnica Sem Escapatória, o aluno que não soube responder deve terminar dizendo a resposta certa."
+  },
+  {
+    "id": 10,
+    "chapter": 4,
+    "technique": "Técnica 16 – Certo é Certo",
+    "page": "pp. 139–173",
+    "question": "O aluno dá uma resposta parcialmente correta sobre a diferença entre conotação e denotação. Em vez de aceitar a resposta incompleta e 'completar o raciocínio pelo aluno', o professor diz: 'Você começou bem, mas precisamos da definição precisa. Como dizemos isso no rigor técnico?'. Essa conduta expressa a:",
+    "options": [
+      "A) Técnica 16 – Certo é Certo",
+      "B) Técnica 38 – Todo Mundo Escreve",
+      "C) Técnica 53 – Olhar de Radar",
+      "D) Técnica 59 – Discurso Positivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 16 (Certo é Certo) exige que o professor mantenha o alto nível de exigência acadêmica, não arredando o pé até que a resposta atinja 100% de precisão e rigor.",
+    "reminder": "Certo é Certo: recuse-se a arredar pé de uma resposta 100% correta e rigorosa."
+  },
+  {
+    "id": 11,
+    "chapter": 4,
+    "technique": "Técnica 17 – Puxe Mais",
+    "page": "pp. 139–173",
+    "question": "Após um estudante acertar a resposta referente à identificação da tese de um texto opinativo, a professora imediatamente desdobra: 'Ótimo acerto, Lucas! Agora explique para a turma qual operador argumentativo no segundo parágrafo comprova a sua conclusão'. Esse aprofundamento representa a:",
+    "options": [
+      "A) Técnica 17 – Puxe Mais",
+      "B) Técnica 15 – Sem Escapatória",
+      "C) Técnica 43 – Virem e Conversem",
+      "D) Técnica 55 – Intervenção Menos Invasiva"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 17 (Puxe Mais) aproveita acertos para fazer perguntas subsequentes que aprofundam o raciocínio, desenvolvem a fluência e testam a solidez do conhecimento.",
+    "reminder": "Puxe Mais recompensa o acerto com mais um desafio intelectual de aprofundamento."
+  },
+  {
+    "id": 12,
+    "chapter": 5,
+    "technique": "Técnica 26 – Arremate",
+    "page": "pp. 228–233",
+    "question": "Nos 5 minutos finais da aula de Inglês, a professora distribui um pequeno impresso com duas questões rápidas (um 'Exit Ticket') para avaliar se o objetivo de aprendizagem do dia sobre *relative pronouns* foi alcançado individualmente por todos os alunos. Essa prática denomina-se:",
+    "options": [
+      "A) Arremate (Exit Ticket)",
+      "B) Faça Agora",
+      "C) Tempo de Espera",
+      "D) Virem e Conversem"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 26 (Arremate / Exit Ticket) consiste em aplicar uma verificação sumativa rápida ao final da aula para coletar dados reais sobre o domínio do objetivo do dia.",
+    "reminder": "O Arremate fornece o diagnóstico de encerramento da aula para nortear a preparação do dia seguinte."
+  },
+  {
+    "id": 13,
+    "chapter": 7,
+    "technique": "Técnica 33 – Tempo de Espera",
+    "page": "pp. 276–282",
+    "question": "Após fazer uma pergunta complexa sobre a estrutura narrativa de um conto, o professor aguarda em silêncio por 5 segundos antes de chamar um aluno para responder, contendo o impulso de falar imediatamente. Esse intervalo deliberado é denominado por Lemov de:",
+    "options": [
+      "A) Tempo de Espera",
+      "B) De Surpresa",
+      "C) Arremate",
+      "D) Voz de Comando"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 33 (Tempo de Espera) concede segundos cruciais de silêncio para que todos os estudantes processem a pergunta e elaborem respostas mais profundas e rigorosas.",
+    "reminder": "Aumentar o tempo de espera melhora drasticamente a qualidade e o rigor das respostas dos estudantes."
+  },
+  {
+    "id": 14,
+    "chapter": 7,
+    "technique": "Técnica 34 – De Surpresa",
+    "page": "pp. 282–301",
+    "question": "Para garantir o engajamento e a atenção de toda a turma, o professor faz uma pergunta para a sala inteira, faz uma breve pausa e só então sorteia ou chama pelo nome o aluno que responderá, sem que os alunos saibam previamente quem será chamado. Essa é a essência da:",
+    "options": [
+      "A) Técnica 34 – De Surpresa (Cold Call)",
+      "B) Técnica 15 – Sem Escapatória",
+      "C) Técnica 58 – Voz de Comando",
+      "D) Técnica 60 – Elogio Preciso"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 34 (De Surpresa / Cold Call) chama alunos de forma previsível no método e imprevisível na escolha, mantendo todos mentalmente ativos.",
+    "reminder": "Faça a pergunta primeiro, faça uma pausa e depois chame o aluno. Assim todos pensam na resposta."
+  },
+  {
+    "id": 15,
+    "chapter": 8,
+    "technique": "Técnica 38 – Todo Mundo Escreve",
+    "page": "pp. 323–327",
+    "question": "Antes de abrir a discussão oral sobre a metáfora em um poema, o professor solicita que todos os estudantes registrem durante 2 minutos sua interpretação por escrito nos cadernos. Essa técnica é conhecida como:",
+    "options": [
+      "A) Todo Mundo Escreve",
+      "B) Virem e Conversem",
+      "C) Intervenção Menos Invasiva",
+      "D) Discurso Positivo"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 38 (Todo Mundo Escreve) utiliza a escrita prévia para organizar as ideias, garantir a participação de 100% da turma e elevar o nível da futura discussão oral.",
+    "reminder": "Escrever antes de falar permite que todos pensem profundamente e refinem seus argumentos."
+  },
+  {
+    "id": 16,
+    "chapter": 9,
+    "technique": "Técnica 43 – Virem e Conversem",
+    "page": "pp. 355–368",
+    "question": "Ao introduzir um tema polemico sobre variação linguística, a professora orienta: 'Com seu parceiro ao lado, discutam durante 60 segundos qual é a diferença entre norma-padrão e preconceito linguístico. Comecem agora!'. Essa interação rápida e estruturada em duplas denomina-se:",
+    "options": [
+      "A) Virem e Conversem (Turn and Talk)",
+      "B) Todo Mundo Escreve",
+      "C) De Surpresa",
+      "D) Olhar de Radar"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 43 (Virem e Conversem) promove discussões em duplas curtas, focadas e com comandos precisos para maximizar a proporção de fala pedagógica.",
+    "reminder": "Virem e Conversem precisa de comandos claros, tempo rigoroso e sinal preciso para retomar a atenção."
+  },
+  {
+    "id": 17,
+    "chapter": 11,
+    "technique": "Técnica 52 – O Que Fazer",
+    "page": "pp. 425–432",
+    "question": "Em vez de dar uma instrução vaga como 'Prestem atenção!', o professor orienta de forma concreta, sequencial e observável: 'Canetas sobre a mesa, cadernos abertos na página 12 e olhos fixos no quadro em 3, 2, 1'. Essa clareza operacional exemplifica:",
+    "options": [
+      "A) Técnica 52 – O Que Fazer",
+      "B) Técnica 53 – Olhar de Radar",
+      "C) Técnica 59 – Discurso Positivo",
+      "D) Técnica 2 – Planeje para o Erro"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 52 (O Que Fazer) substitui repreensões ou comandos abstratos por instruções diretas, concretas, específicas e observáveis.",
+    "reminder": "Diga aos estudantes exatamente o que eles devem fazer de forma física e observável."
+  },
+  {
+    "id": 18,
+    "chapter": 11,
+    "technique": "Técnica 53 – Olhar de Radar / Ser Visto Observando",
+    "page": "pp. 432–437",
+    "question": "Durante a realização de uma atividade individual, o professor se posiciona strategicamente no canto da sala, faz uma varredura visual lenta com o olhar por todos os alunos e realiza um movimento sutil com a cabeça ao ver todos trabalhando. Essa atitude intencional expressa:",
+    "options": [
+      "A) Olhar de Radar / Ser Visto Observando",
+      "B) Intervenção Menos Invasiva",
+      "C) Voz de Comando",
+      "D) Arremate"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 53 envolve rastrear continuamente a sala de aula (Olhar de Radar) de forma deliberada (Ser Visto Observando) para prevenir desvios comportamentais e manter a conformidade.",
+    "reminder": "Mostre aos alunos que você está ativamente acompanhando o trabalho de cada um na sala."
+  },
+  {
+    "id": 19,
+    "chapter": 11,
+    "technique": "Técnica 55 – Intervenção Menos Invasiva",
+    "page": "pp. 439–445",
+    "question": "Ao notar que um estudante está distraído conversando durante a leitura, a professora caminha em direção à mesa dele sem interromper sua explicação oral e toca levemente na folha de tarefas do aluno. Ele imediatamente retorna ao texto. Essa abordagem minimiza a interrupção da aula, sendo um exemplo de:",
+    "options": [
+      "A) Intervenção Menos Invasiva",
+      "B) Voz de Comando",
+      "C) Certo é Certo",
+      "D) Puxe Mais"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 55 (Intervenção Menos Invasiva) corrige desvios de conduta utilizando pistas não verbais ou contatos mínimos sem parar o fluxo instrucional da aula.",
+    "reminder": "Corrija o comportamento usando o menor nível de invasão e interrupção da instrução possível."
+  },
+  {
+    "id": 20,
+    "chapter": 11,
+    "technique": "Técnica 58 – Voz de Comando",
+    "page": "pp. 455–473",
+    "question": "Quando o professor precisa falar com a turma inteira, ele se posiciona no centro da sala, permanece imóvel, fala em tom calmo, firme e ligeiramente mais pausado, esperando total silêncio antes de emitir a orientação. Ele faz uso da:",
+    "options": [
+      "A) Técnica 58 – Voz de Comando",
+      "B) Técnica 59 – Discurso Positivo",
+      "C) Técnica 34 – De Surpresa",
+      "D) Técnica 4 – Planeje em Dobro"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 58 (Voz de Comando) projeta autoridade e postura de liderança pedagógica através de presença física estável, economia de palavras e serenidade.",
+    "reminder": "Fale menos, fale devagar, mantenha-se imóvel e não fale por cima de outros ruídos."
+  },
+  {
+    "id": 21,
+    "chapter": 12,
+    "technique": "Técnica 59 – Discurso Positivo",
+    "page": "pp. 477–484",
+    "question": "Em vez de dizer 'Parem de conversar e parem de olhar a janela!', o docente afirma: 'Ainda precisamos de 4 pessoas com o olhar aqui no quadro para começarmos nosso desafio de sintaxe. Agradeço à Maria e ao João que já estão prontos'. A narrativa foca no comportamento desejado e na suposição do melhor dos alunos, configurando:",
+    "options": [
+      "A) Discurso Positivo",
+      "B) Elogio Preciso",
+      "C) O Que Fazer",
+      "D) Sem Escapatória"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 59 (Discurso Positivo) orienta a comunicação pelo enquadramento construtivo, pressupondo boas intenções e motivando pela perspectiva correta.",
+    "reminder": "Foque nas ações desejadas e pressuponha motivos positivos dos estudantes."
+  },
+  {
+    "id": 22,
+    "chapter": 12,
+    "technique": "Técnica 60 – Elogio Preciso",
+    "page": "pp. 485–489",
+    "question": "O professor elogia um grupo de alunos dizendo: 'Parabéns ao grupo 3 por revisar o rascunho da redação buscando erros de concordância conforme combinamos, e não apenas por terminarem rápido'. Ao elogiar o esforço real e o procedimento específico, o docente aplica:",
+    "options": [
+      "A) Elogio Preciso",
+      "B) Discurso Positivo",
+      "C) Puxe Mais",
+      "D) Cultura do Erro"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Técnica 60 (Elogio Preciso) reforça comportamentos positivos específicos e direcionados ao aprendizado, em vez de distribuir elogios genéricos ou insinceros.",
+    "reminder": "Elogie o esforço real e a estratégia específica empregada pelo estudante."
+  }
+]
